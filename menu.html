@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/menu.css" />
+</head>
+<body>
+    <div class="header">
+        <img class="img-petShop" src="https://img.freepik.com/vetores-premium/logotipo-de-vetor-de-gato-e-cachorro-uma-face-para-juntos-logotipo-icone-simbolo-de-vetor-cachorro-gato_1101178-100.jpg?w=740" alt="Logo Pet Shop">
+        <h1 class="muda-text" title="Ir para Pet Shop">Pet Shop</h1>
+        <nav class="nav">
+            <form class="d-flex" role="search" onsubmit="event.preventDefault(); search();">
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Procurar..."
+                       aria-label="Procurar"
+                       id="searchInput"
+                       oninput="search()">
+                <button class="btn btn-outline-success" type="button" onclick="search()">Buscar</button>
+            </form>
+        </nav>
+        <div title="Ir para o carrinho" onclick="window.location.href='carrinho.html'">
+            <div class="carrinho muda-text">
+                <img src="https://img.icons8.com/?size=50&id=9671&format=png" alt="Ícone do carrinho de compras">
+                carrinho
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-categories">
+        <ul>
+            <li>Bem-vindo à PetShop, sua loja confiável para a felicidade do seu pet.</li>
+        </ul>
+      
+    </div>
+
+    <div>
+        <span class="textoPequeno">A-</span>
+        <span class="textoNormal">A</span>
+        <span class="textoGrande">A+</span>
+        <span class="modoEscuro" title="Modo Escuro/Claro">
+            <img src="https://www.svgrepo.com/show/309493/dark-theme.svg" alt="Ícone modo escuro">
+        </span>
+    </div>
+
+    <div class="destaques muda-text">Destaque para cachorro</div>
+    <div class="category-container">
+        <span title="Ir para rações" onclick="window.location.href='detalhe.html'">
+            <img class="img-Alim" src="https://img.freepik.com/vetores-premium/corgi-bonito-que-come-a-ilustracao-do-icone-dos-desenhos-animados-do-alimento-para-caes-conceito-de-icone-animal-isolado-estilo-cartoon-plana_138676-1304.jpg?w=740" alt="Rações para cachorro">
+            <span class="Alim muda-text">Rações</span>
+        </span>
+        <span title="Ir para higiene" onclick="window.location.href='detalhe2.html'">
+            <img class="img-higiene" src="https://img.freepik.com/vetores-gratis/cao-poodle-bonito-tomando-banho-no-balde-com-ilustracao-de-icone-vetorial-de-desenho-animado-de-bolha-icone-de-natureza-animal_138676-5346.jpg?w=740&t=st=1713264760~exp=1713265360~hmac=e088945958730512af736db8205e702f2e39deb8efa6a0d762912cc3087af312" alt="Higiene para cachorro">
+            <span class="higiene muda-text">Higiene/Limpeza</span>
+        </span>
+        <span title="Ir para acessórios" onclick="window.location.href='detalhe3.html'">
+            <img class="img-acessorios" src="https://img.freepik.com/vetores-gratis/flutuante-pet-collar-cartoon-vector-icon-ilustracao-animal-objeto-icone-conceito-isolado-premium_138676-4759.jpg?w=740&t=st=1712969442~exp=1712970042~hmac=0379a31a75a18241aa019de4df07c25f1e4557deed51d21f95397735e053e687" alt="Acessórios para cachorro">
+            <span class="acessorios muda-text">Acessórios</span>
+        </span>
+    </div>
+
+    <div class="destaques muda-text"><br>Destaque para Gato</div>
+    <div class="category-container">
+        <span title="Ir para rações" onclick="window.location.href='detalhe4.html'">
+            <img class="img-Alim" src="https://img.freepik.com/vetores-premium/gato-bonito-comendo-ilustracao-vetorial-de-icone-de-desenho-animado-de-peixe-conceito-de-icone-de-comida-animal-isolado-vetor-plano_138676-9281.jpg?w=740" alt="Rações para gato">
+            <span class="Alim muda-text">Rações</span>
+        </span>
+        <span title="Ir para higiene" onclick="window.location.href='detalhe5.html'">
+            <img class="img-higiene" src="https://img.freepik.com/vetores-gratis/gato-bonito-sentado-na-ilustracao-de-icone-de-vetor-de-desenhos-animados-de-caixa-de-areia-conceito-de-icone-de-natureza-animal-isolado_138676-6450.jpg?w=740&t=st=1713266160~exp=1713266760~hmac=093b6ce419e3c6f588ef7e6db49013e8db38949d376d14ce41a040171a3d9d10" alt="Higiene para gato">
+            <span class="higiene muda-text">Higiene/Limpeza</span>
+        </span>
+        <span title="Ir para acessórios" onclick="window.location.href='detalhe6.html'">
+            <img class="img-acessorios" src="https://img.freepik.com/vetores-gratis/flutuante-pet-collar-cartoon-vector-icon-ilustracao-animal-objeto-icone-conceito-isolado-premium_138676-4759.jpg?w=740&t=st=1712969442~exp=1712970042~hmac=0379a31a75a18241aa019de4df07c25f1e4557deed51d21f95397735e053e687" alt="Acessórios para gato">
+            <span class="acessorios muda-text">Acessórios</span>
+        </span>
+    </div>
+    <footer class="muda-text">
+        <p>© 2024 Petshop. Todos os direitos reservados.</p>
+    </footer>
+    <script src="modo.js"></script>
+    <script src="procura.js"></script>
+</body>
+</html>

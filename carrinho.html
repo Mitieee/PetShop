@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/carrinho.css" />
+</head>
+<body>
+    <div class="header">
+        <img class="img-petShop" src="https://img.freepik.com/vetores-premium/logotipo-de-vetor-de-gato-e-cachorro-uma-face-para-juntos-logotipo-icone-simbolo-de-vetor-cachorro-gato_1101178-100.jpg?w=740" alt="Logo Pet Shop">
+        <h1 class="muda-text" title="Ir para Pet Shop" onclick="window.location.href='menu.html'">Pet Shop</h1>
+        <nav class="nav">
+            <form class="d-flex" role="search" onsubmit="event.preventDefault(); search();">
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Procurar..."
+                       aria-label="Procurar"
+                       id="searchInput"
+                       oninput="search()">
+                <button class="btn btn-outline-success" type="button" onclick="search()">Buscar</button>
+            </form>
+        </nav>
+        <div title="Ir para o carrinho" onclick="window.location.href='carrinho.html'">
+            <div class="carrinho muda-text">
+                <img src="https://img.icons8.com/?size=50&id=9671&format=png" alt="Ícone do carrinho de compras">
+                carrinho
+            </div>
+        </div>
+    </div>
+    <div>
+        <span class="textoPequeno">A-</span>
+        <span class="textoNormal">A</span>
+        <span class="textoGrande">A+</span>
+        <span class="modoEscuro" title="Modo Escuro/Claro">
+            <img src="https://www.svgrepo.com/show/309493/dark-theme.svg" alt="Ícone modo escuro">
+        </span>
+    </div>
+    <div class="tabela muda-text">
+        <h2>Carrinho de Compras</h2>
+        <table id="cartTable">
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Total</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="total muda-text" id="cartTotal">
+        Total: R$0.00
+    </div>
+    <div class="centralizar">
+        <button class="muda-text" onclick="window.location.href='menu.html'">Continuar Comprando</button>
+    </div>
+    <div class="centralizar">
+        <button class="muda-text" onclick="approvePayment()">Ir para pagamento</button>
+    </div>
+    <footer class="muda-text">
+        <p>© 2024 Petshop. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="quanti.js"></script>
+    <script src="modo.js"></script>
+	 <script src="pagamento.js"></script>
+</body>
+</html>

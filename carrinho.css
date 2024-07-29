@@ -1,0 +1,152 @@
+     body {
+            margin: 0;
+            font-family: 'Arial';
+        }
+
+        .header {
+            background-color: #fcd69f;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 20px;
+            font-size: 25px;
+            cursor: pointer;
+            color: rgb(50, 28, 1);
+        }
+
+        .img-petShop {
+            height: 100px;
+        }
+
+        .nav input {
+            width: 200px;
+        }
+
+        .me-2, .btn {
+            border: none;
+            padding: 8px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            background-color: #a94f00;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        .d-flex {
+            display: flex;
+        }
+
+        .carrinho {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .carrinho img {
+            height: 35px;
+            margin-right: 5px;
+        }
+
+        .tabela {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            margin-top: 20px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #a94f00;
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin-top: 500px;
+           
+        }
+
+    
+
+        .textoPequeno,
+        .textoNormal,
+        .textoGrande,
+        .modoEscuro {
+            align-items: center;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .textoPequeno {
+            font-size: 20px;
+        }
+
+        .textoNormal {
+            font-size: 25px;
+        }
+
+        .textoGrande {
+            font-size: 30px;
+        }
+
+        .modoEscuro img {
+            height: 30px;
+            margin-left: -10px;
+        }
+
+        .dark-mode, .dark-mode .btn {
+            background-color: #333;
+        }
+
+        .dark-mode div, .dark-mode h1, .dark-mode span, .dark-mode p {
+            color: white;
+        }
+
+        .dark-mode th {
+            color: #333;
+        }
+
+        .dark-mode .header, .dark-mode footer {
+            background-color: #444;
+        }
+
+        .centralizar {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+				 @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+
+
+            .carrinho {
+                margin-top: 10px;
+            }
+
+    }
